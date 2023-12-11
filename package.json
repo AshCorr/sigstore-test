@@ -1,0 +1,19 @@
+{
+  "name": "sigstore-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sigstore/bundle": "^2.1.0",
+    "@sigstore/sign": "^2.1.0",
+    "tsx": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4"
+  }
+}
