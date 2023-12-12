@@ -15,4 +15,4 @@ jobs:
           name: sigstore-artifacts
           path: |
             artifact.zip
-            cosign.bundle
+            artifact.zip.sigstore

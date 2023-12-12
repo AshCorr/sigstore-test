@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sigstore/bundle": "^2.1.0",
-    "@sigstore/sign": "^2.1.0",
+    "sigstore": "^2.1.0",
     "tsx": "^4.6.2"
   },
   "devDependencies": {
