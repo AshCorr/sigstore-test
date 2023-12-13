@@ -8,10 +8,10 @@ import { readFile, writeFile } from "node:fs/promises"
   const bundle = await sign(artifactBuffer);
   await writeFile("artifact.zip.sigstore", JSON.stringify(bundle));
 
-  // await verify(bundle, artifactBuffer, {
-  //   certificateIssuer: "1.3.6.1.4.1.57264.1.1",
-  //   certificateIdentityURI: "https://github.com/AshCorr/sigstore-test/.github/workflows/test.yml@refs/heads/main"
-  // });
+  await verify(bundle, artifactBuffer, {
+    certificateIssuer: "https://token.actions.githubusercontent.com",
+    certificateIdentityURI: "https://github.com/AshCorr/sigstore-test/.github/workflows/test.yml@refs/heads/main"
+  });
 
   console.log("Verified!");
 })();
